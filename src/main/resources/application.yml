@@ -1,0 +1,15 @@
+spring:
+  application.name: ms-collector
+
+msdb:
+  # локальный запуск
+  # при docker-compose url переопределим через профиль docker
+  url: http://localhost:8080
+
+collector:
+  symbols: [ "BTCUSDT", "ETHUSDT", "BNBUSDT" ]
+  fixedDelay: 60000
+  initialDelay: 5000
+logging:
+  level:
+    trade.collector.mscollector: DEBUG

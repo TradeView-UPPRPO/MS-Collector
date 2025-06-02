@@ -1,0 +1,13 @@
+spring:
+  main:
+    web-application-type: none   # если REST не нужен; иначе убрать
+msdb:
+  url: ${MSDB_URL:http://ms-db:8080}
+
+collector:
+  symbols: [ "BTCUSDT", "ETHUSDT", "BNBUSDT" ]
+  fixedDelay: 60000
+  initialDelay: 5000
+logging:
+  level:
+    trade.collector.mscollector: DEBUG
