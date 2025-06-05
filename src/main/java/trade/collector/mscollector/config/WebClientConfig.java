@@ -17,7 +17,7 @@ public class WebClientConfig {
                 .baseUrl(baseUrl)
                 .defaultHeader("Content-Type", "application/json")
                 .clientConnector(new ReactorClientHttpConnector())
-                // увеличим буфер → Binance 24h может быть большим
+                // увеличим буфер
                 .exchangeStrategies(ExchangeStrategies.builder()
                         .codecs(cfg -> cfg.defaultCodecs()
                                 .maxInMemorySize(2 * 1024 * 1024))

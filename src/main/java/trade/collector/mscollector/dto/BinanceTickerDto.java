@@ -5,9 +5,6 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-
-// Часть ответа /api/v3/ticker/24hr
-
 @Data
 public class BinanceTickerDto {
     private String symbol;
